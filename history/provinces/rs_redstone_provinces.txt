@@ -1,0 +1,16 @@
+################# b_sunset_height #################
+############ c_sunrise_bite - d_the_cut ###########
+2692 = {
+	culture = moonman
+	religion = fots_seven
+	holding = castle_holding
+	8196.1.1 = {
+		buildings = { castle_01 }
+	    special_building = iron_coast_mines_01
+	}
+}
+################### b_castlerise ##################
+############ c_sunrise_bite - d_the_cut ###########
+2689 = {
+	holding = none
+}

@@ -1,0 +1,14 @@
+#################### b_goldburn ###################
+########## c_pendric_hills - d_castamere ##########
+3195 = {
+	culture = westerman
+	religion = fots_seven
+	holding = castle_holding
+	8055.1.1 = {
+		buildings = { castle_01 }
+	}
+	8261.10.30 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}

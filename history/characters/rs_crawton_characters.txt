@@ -1,0 +1,106 @@
+﻿### House Crawton ###
+#
+# Eyron Crawton (220 - 260): killed after the Reyne-Tarbeck revolt
+# Armand Crawton (245 - 280): fled to Rodrik's court with his children
+# Cerelle Hawthorne (247 - 277): Armand's wife
+# Seamus Crawton (264 - ): the brains
+# Torrhen Crawton (265 - ): the brawn
+
+Crawton001 = {
+    name = "Eyron" # Eyron Crawton, who participated in the Reyne-Tarbeck rebellion
+    #dna = Crawton001
+    dynasty = dynn_Crawton
+
+    culture = westerman
+    religion = fots_seven
+
+    # Stats
+
+    # Traits
+
+    # Life events
+    8220.1.1 = { birth = yes }
+	8261.10.30 = {
+		death = {
+			death_reason = death_execution
+			killer = Lannister_1 # Tywin Lannister
+		}
+	}
+}
+### Issue of Eyron
+Crawton002 = {
+    name = "Armond" # Armond Crawton
+    #dna = Crawton002
+    dynasty = dynn_Crawton
+
+    father = Crawton001 # Eyron Crawton
+    mother = Redstone009 # Wylla Redstone
+
+    culture = westerman
+    religion = fots_seven
+
+    # Stats
+
+    # Traits
+
+    # Life events
+    8245.1.1 = { birth = yes }
+    8261.10.30 = { employer = Redstone011 } # Elbert Redstone
+    # Or 8261.11.1 if Reyne vassal
+    # 8273 children kidnapped
+    8266.1.1 = { add_spouse = HawthorneAdd001 } # Cerelle Hawthorne
+    8280.5.24 = {
+        death = {
+            death_reason = death_murder
+        }
+    }
+}
+### Issue of Armond
+Crawton003 = {
+    name = "Seamus" # Seamus Crawton
+    #dna = Crawton003
+    dynasty = dynn_Crawton
+
+    father = Crawton002 # Armond Crawton
+    mother = HawthorneAdd001 # Cerelle Hawthorne
+
+    culture = westerman
+    religion = fots_seven
+
+    # Stats
+
+    # Traits
+    trait = intellect_good_2 # Intelligent
+
+    # Life events
+    8264.1.1 = { birth = yes }
+    # 8273 kidnapped by rival house
+    # ???? move to Braavos, mercenary work
+    8280.5.24 = { employer = Redstone011 } # Elbert Redstone
+    # 8283 appointed by Lord Elbert to Council
+    # 8284 implicated in tourney
+}
+Crawton004 = {
+    name = "Torrhen" # Torrhen Crawton
+    #dna = Crawton004
+    dynasty = dynn_Crawton
+
+    father = Crawton002 # Armond Crawton
+    mother = HawthorneAdd001 # Cerelle Hawthorne
+
+    culture = westerman
+    religion = fots_seven
+
+    # Stats
+
+    # Traits
+    trait = strong
+
+    # Life events
+    8265.1.1 = { birth = yes }
+    # 8273 kidnapped by rival house
+    # ???? move to Braavos, mercenary work
+    8280.5.24 = { employer = Redstone011 } # Elbert Redstone
+    # 8283 knighted by Lord Elbert
+    # 8284 implicated in tourney
+}

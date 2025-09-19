@@ -1,0 +1,516 @@
+﻿Redstone001 = {
+  name = "Osric" # Osric redstone, founder of House Redstone
+  dna = Redstone001
+  dynasty = dynn_Redstone
+
+  #father = unknown
+  mother = Redfort_31 # Maery Redfort
+
+  culture = moonman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8164.1.1 = {
+    birth = yes
+    trait = bastard
+  }
+	8186.1.1 = { add_spouse = RedstoneAdd001 } # Walda, a lowborn
+  8206.1.1 = { death = yes }
+}
+### Issue of Osric
+Redstone002 = {
+  name = "Alayne" # Alayne Redstone, the Red Widow
+  #dna = Redstone002
+  dynasty = dynn_Redstone
+  female = yes
+
+  father = Redstone001 # Osric Redstone
+  # mother = RedstoneAdd001 # Walda
+
+  culture = moonman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8180.1.1 = { birth = yes }
+	8198.1.1 = { add_spouse = LockeAdd001 } # Uthor Locke
+  8209.1.1 = { # Two years after his husband died, Alayne returns home
+    trait = widowed
+		give_nickname = nick_agot_rs_the_red_widow
+		employer = Redstone005 # Robar Redstone
+	}
+  8211.1.1 = { # Alayne becomes regent after Mad Osmund's execution
+    effect = {
+			agot_appoint_as_regent_for_castle_history_effect = { CASTLE = title:c_sunrise_bite }
+    }
+  }
+  8252.1.1 = { death = yes }
+}
+Redstone003 = {
+  name = "Oswell" # Oswell Redstone, the second lord
+  # dna = Redstone003
+  dynasty = dynn_Redstone
+
+  father = Redstone001 # Osric Redstone
+  # mother = RedstoneAdd001 # Walda
+
+  culture = moonman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8182.1.1 = { birth = yes }
+	8198.1.1 = { add_spouse = BelmoreAdd001 } # Rowena Belmore
+  8209.1.1 = {
+		death = { death_reason = death_fall }
+	}
+}
+Redstone004 = {
+  name = "Osmund" # Osmnund the Mad, second son of Osric, regent to Robar
+  # dna = Redstone004
+  dynasty = dynn_Redstone
+
+  father = Redstone001 # Osric Redstone
+  # mother = RedstoneAdd001 # Walda
+
+  culture = moonman
+  religion = fots_seven
+
+  # Stats
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	prowess = 5
+
+  # Traits
+  trait = intellect_good_2 # Intelligent
+
+  disallow_random_traits = yes
+
+  # Life events
+  8187.1.1 = { birth = yes }
+	8209.1.1 = {
+    give_nickname = nick_agot_rs_the_black
+		effect = {
+			agot_appoint_as_regent_for_castle_history_effect = { CASTLE = title:c_sunrise_bite }
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:c_sunrise_bite
+				POSITION = councillor_marshal
+			}
+		}
+	}
+  8211.1.1 = { 
+    death = { 
+      death_reason = death_execution 
+      killer = Redstone005 # Robar Redstone, his nephew
+    } 
+  }
+}
+### Issue of Oswell
+Redstone005 = {
+  name = "Robar" # Robar Redstone, the third lord
+  dna = Redstone005
+  dynasty = dynn_Redstone
+
+  father = Redstone003 # Oswell Redstone
+  mother = BelmoreAdd001 # Rowena Belmore
+
+  culture = moonman
+  religion = fots_seven
+
+  # Stats
+	diplomacy = 6
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	prowess = 5
+
+  # Traits
+  trait = intellect_good_2 # Intelligent
+
+  disallow_random_traits = yes
+
+  # Life events
+  8199.1.1 = { birth = yes }
+  8202.1.1 = {
+    trait = curious
+  }
+  8209.1.1 = { # Alayne returns home, becomes Robar's guardian
+		effect = {
+			agot_set_as_ward_history_effect = { GUARDIAN = character:Redstone002 } # Alayne Redstone
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:c_sunrise_bite
+				POSITION = councillor_spymaster
+			}
+		}
+    trait = patient
+	}
+  8211.1.1 = { # Executed his uncle Osmund
+    trait = kinslayer_1
+    trait = just
+  }
+  8215.1.1 = {
+    trait = education_diplomacy_3
+    trait = inquisitive
+    effect = {
+      remove_trait = curious
+    }
+  }
+	8220.1.1 = { add_spouse = SunderlandAdd001 } # Falena Sunderland
+  8244.1.1 = { death = yes }
+}
+Redstone006 = {
+  name = "Myranda" # Myranda Redstone, daughter of Oswell
+  # dna = Redstone006
+  dynasty = dynn_Redstone
+  female = yes
+
+  father = Redstone003 # Oswell Redstone
+  mother = BelmoreAdd001 # Rowena Belmore
+
+  culture = moonman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8204.1.1 = { birth = yes }
+	8222.1.1 = { add_spouse = CorbrayAdd001 } # Jonos Stone
+  8240.1.1 = { death = yes }
+}
+Redstone007 = {
+  name = "Lucas" # Lucas Redstone, second son of Oswell
+  # dna = Redstone007
+  dynasty = dynn_Redstone
+
+  father = Redstone003 # Oswell Redstone
+  mother = BelmoreAdd001 # Rowena Belmore
+
+  culture = moonman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8206.1.1 = { birth = yes }
+	8222.1.1 = { add_spouse = PryorAdd001 } # Joanna Pryor
+  8253.1.1 = { death = yes }
+}
+### Issue of Robar
+Redstone008 = {
+  name = "Edmund" # Edmund Redstone, the fourth lord
+  # dna = Redstone008
+  dynasty = dynn_Redstone
+
+  father = Redstone005 # Robar Redstone
+  mother = SunderlandAdd001 # Falena Sunderland
+
+  culture = moonman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8218.1.1 = { birth = yes }
+	8222.1.1 = { add_spouse = CharltonAdd001 } # Walda Charlton
+  8253.1.1 = { death = yes }
+}
+Redstone009 = {
+  name = "Wylla" # Wylla Redstone, daughter of Robar
+  # dna = Redstone009
+  dynasty = dynn_Redstone
+  female = yes
+
+  father = Redstone005 # Robar Redstone
+  mother = SunderlandAdd001 # Falena Sunderland
+
+  culture = moonman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8221.1.1 = { birth = yes }
+	8238.1.1 = { add_spouse = Crawton001 } # Eyron Crawton
+  8254.1.1 = { death = yes }
+}
+### Issue of Lucas
+Redstone010 = {
+  name = "Lyanna" # Lyanna Redstone, daughter of Lucas
+  # dna = Redstone010
+  dynasty = dynn_Redstone
+  female = yes
+
+  father = Redstone007 # Lucas Redstone
+  mother = PryorAdd001 # Joanna Pryor
+
+  culture = moonman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8224.1.1 = { birth = yes }
+	8238.1.1 = { add_spouse = MallisterAdd001 } # Jared Mallister
+  8267.1.1 = { death = yes }
+}
+### Issue of Edmund
+Redstone011 = {
+  name = "Elbert" # Elbert Redstone, the fifth lord
+  # dna = Redstone011
+  dynasty = dynn_Redstone
+
+  father = Redstone008 # Edmund Redstone
+  mother = CharltonAdd001 # Walda Charlton
+
+  culture = moonman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8236.1.1 = { birth = yes }
+	8238.1.1 = { add_spouse = UpcliffAdd001 } # Rosamund Upcliff
+	8260.11.11 = {
+		trait = knight
+		effect = {
+			agot_knighted_char_history_effect = { KNIGHT = character:Arryn_3 } # Jon Arryn
+		}
+	}
+  8286.1.1 = { death = yes }
+}
+### Issue of Elbert
+Redstone012 = {
+  name = "Lorra" # Lorra Redstone, firt daughter of Lord Elbert
+  # dna = Redstone012
+  dynasty = dynn_Redstone
+  female = yes
+
+  father = Redstone011 # Elbert Redstone
+  mother = UpcliffAdd001 # Rosamund Upcliff
+
+  culture = moonman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8257.1.1 = { birth = yes }
+	8238.1.1 = { add_spouse = PiperAdd002 } # Ambrose Piper
+  8284.1.1 = { employer = Baratheon_2 } # Live in King's Landing
+}
+Redstone013 = {
+  name = "Rodrik" # Rodrik Redstone, the sixth lord
+  # dna = Redstone013
+  dynasty = dynn_Redstone
+
+  father = Redstone011 # Elbert Redstone
+  mother = UpcliffAdd001 # Rosamund Upcliff
+
+  culture = moonman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8261.11.19 = { birth = yes }
+	8278.1.1 = { add_spouse = LockeAdd002 } # Elaena Locke, first wife
+	8286.3.15 = { add_spouse = HersyAdd001 } # Jeyne Hersy, second wife
+  8294.5.13 = { # Firstborn son dies in an accident, blames Ellys
+    effect = {
+      add_opinion = {
+        target = character:Redstone018 # Ellys, his niece
+        modifier = angry_opinion
+        opinion = -50
+      }
+    }
+  }
+}
+Redstone014 = {
+  name = "Robett" # Robett Redstone, Elbert's second son
+  # dna = Redstone014
+  dynasty = dynn_Redstone
+
+  father = Redstone011 # Elbert Redstone
+  mother = UpcliffAdd001 # Rosamund Upcliff
+
+  culture = moonman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+  trait = content
+
+  # Life events
+  8262.12.13 = { birth = yes }
+	8279.2.1 = { add_spouse = MeadowsAdd001 } # Marybel Meadows
+}
+Redstone015 = {
+  name = "Roland" # Roland Redstone, Elbert's third son
+  # dna = Redstone015
+  dynasty = dynn_Redstone
+
+  father = Redstone011 # Elbert Redstone
+  mother = UpcliffAdd001 # Rosamund Upcliff
+
+  culture = moonman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8263.4.1 = { birth = yes }
+  8279.10.7 = { # Exiled to join the Night's Watch
+		trait = nightswatch_historical
+		effect = {
+			agot_join_nightswatch_history_effect = {
+				ORDER = ranger
+				CASTLE = title:c_castle_black
+				NW_JOIN_AGE = 16
+			}
+		}
+  }	
+}
+### Issue of Rodrik
+Redstone016 = {
+  name = "Elbert" # Elbert Redstone, the younger Rodrik's first son
+  # dna = Redstone016
+  dynasty = dynn_Redstone
+
+  father = Redstone013 # Rodrik Redstone
+  mother = LockeAdd002 # Elaena Locke
+
+  culture = moonman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8279.4.4 = { birth = yes }
+	8294.5.13 = {
+    death = {
+      death_reason = death_fall
+    }
+  }
+}
+Redstone017 = {
+  name = "Ashara" # Ashara Redstone, Rodrik's daughter
+  # dna = Redstone017
+  dynasty = dynn_Redstone
+  female = yes
+
+  father = Redstone013 # Rodrik Redstone
+  mother = HersyAdd001 # Jeyne Hersy
+
+  culture = moonman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8286.12.20 = { birth = yes }
+}
+Redstone017 = {
+  name = "Robar" # Robar Redstone, Rodrik's second son
+  # dna = Redstone017
+  dynasty = dynn_Redstone
+
+  father = Redstone013 # Rodrik Redstone
+  mother = HersyAdd001 # Jeyne Hersy
+
+  culture = moonman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8287.10.10 = { birth = yes }
+}
+### Issue of Robett
+Redstone018 = {
+  name = "Ellys" # Ellys Redstone, Robett's daughter
+  # dna = Redstone018
+  dynasty = dynn_Redstone
+  female = yes
+
+  father = Redstone014 # Robett Redstone
+  mother = MeadowsAdd001 # Marybel Meadows
+
+  culture = moonman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8279.11.11 = { birth = yes }
+}
+### Issue of Roland
+Redstone019 = {
+  name = "Jaremy" # Jaremy Stone, Roland's bastard son
+  # dna = Redstone019
+  dynasty = dynn_Redstone
+
+  father = Redstone015 # Roland Redstone
+  #mother = unknown
+
+  culture = moonman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+  trait = bastard
+
+  # Life events
+  8279.8.20 = { birth = yes }
+  8297.4.20 = { # Appointed as maester
+		trait = maester_historical
+		effect = { # Maester of the Iron Coast
+			agot_maester_starting_setup_history_effect = yes
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:c_sunrise_bite
+				POSITION = maester_court_position
+			}
+		}
+  }
+}

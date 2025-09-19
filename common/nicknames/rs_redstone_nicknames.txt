@@ -1,0 +1,3 @@
+﻿nick_agot_rs_the_red_widow = {} # Alayne Redstone
+nick_agot_rs_the_mad = { is_bad = yes } # Mad Osmund, unused
+nick_agot_rs_the_black = { is_bad = yes } # Black Osmund

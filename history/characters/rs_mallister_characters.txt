@@ -1,0 +1,144 @@
+﻿### House Mallister additions ###
+#
+# Joseth Mallister (180 - 247) - CANON
+# Jared Mallister (224 - 255) = Lyanna Redstone
+
+MallisterAdd001 = {
+    name = "Jared" # Jared Mallister, husband of Lyanna Redstone
+    # dna = MallisterAdd001
+    dynasty = dynn_Mallister
+
+    father = Mallister_50 # Joseth Mallister, who participated in Ashford Tourney in 209 AC
+    #mother = unknown
+
+    culture = riverlander
+    religion = fots_seven
+
+    # Stats
+
+    # Traits
+
+    # Life events
+    8224.1.1 = { birth = yes }
+    8255.1.1 = { death = yes }
+}
+### Issue of Jared
+MallisterAdd002 = {
+    name = "Barbara" # Barbara Mallister
+    # dna = MallisterAdd002
+    dynasty = dynn_Mallister
+    female = yes
+
+    father = MallisterAdd001 # Jared Mallister
+    mother = Redstone010 # Lyanna Redstone
+
+    culture = riverlander
+    religion = fots_seven
+
+    # Stats
+
+    # Traits
+
+    # Life events
+    8242.1.1 = { birth = yes }
+    8280.1.1 = { death = yes }
+}
+MallisterAdd003 = {
+    name = "Catelyn" # Catelyn Mallister
+    # dna = MallisterAdd003
+    dynasty = dynn_Mallister
+    female = yes
+
+    father = MallisterAdd001 # Jared Mallister
+    mother = Redstone010 # Lyanna Redstone
+
+    culture = riverlander
+    religion = fots_seven
+
+    # Stats
+
+    # Traits
+
+    # Life events
+    8243.1.1 = { birth = yes }
+    8293.1.1 = { death = yes }
+}
+MallisterAdd004 = {
+    name = "Gerold" # Gerold Mallister
+    # dna = MallisterAdd004
+    dynasty = dynn_Mallister
+
+    father = MallisterAdd001 # Jared Mallister
+    mother = Redstone010 # Lyanna Redstone
+
+    culture = riverlander
+    religion = fots_seven
+
+    # Stats
+
+    # Traits
+
+    # Life events
+    8245.1.1 = { birth = yes }
+    8261.1.1 = { add_spouse = BlackwoodAdd001 } # Darla Blackwood
+    8295.1.1 = { death = yes }
+}
+### Issue of Gerold
+MallisterAdd005 = {
+    name = "Jeffory" # Jeffory Mallister
+    # dna = MallisterAdd005
+    dynasty = dynn_Mallister
+
+    father = MallisterAdd004 # Gerold Mallister
+    mother = BlackwoodAdd001 # Darla Blackwood
+
+    culture = riverlander
+    religion = fots_seven
+
+    # Stats
+
+    # Traits
+
+    # Life events
+    8261.1.1 = { birth = yes }
+    8282.1.1 = { death = yes }
+}
+MallisterAdd006 = {
+    name = "Jared" # Jared Mallister
+    # dna = MallisterAdd006
+    dynasty = dynn_Mallister
+
+    father = MallisterAdd004 # Gerold Mallister
+    mother = BlackwoodAdd001 # Darla Blackwood
+
+    culture = riverlander
+    religion = fots_seven
+
+    # Stats
+
+    # Traits
+
+    # Life events
+    8271.1.1 = { birth = yes }
+    8289.1.1 = { death = yes }
+}
+### Issue of Jared the younger
+MallisterAdd007 = {
+    name = "Lucas" # Lucas Mallister
+    # dna = MallisterAdd007
+    dynasty = dynn_Mallister
+
+    father = MallisterAdd006 # Jared Mallister
+    #mother = unknown
+
+    culture = riverlander
+    religion = fots_seven
+
+    # Stats
+
+    # Traits
+
+    # Life events
+    8289.1.1 = { birth = yes }
+    8295.1.1 = { employer = Redstone013 } # Rodrik Redstone
+}

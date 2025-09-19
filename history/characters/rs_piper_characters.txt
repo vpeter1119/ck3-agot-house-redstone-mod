@@ -1,0 +1,97 @@
+﻿### House Piper additions ###
+#
+# Lord Kyle Piper (205 - 266) = Salanna Groves
+#   Lord Robin Piper (229 - 282), father of Lord Clement
+#   Petyr Piper (230 - 259)
+#       Ambrose Piper (250 - 282) = Lorra Redstone
+#           Loras Piper (276 - )
+#           Alanis Piper (277 - )
+#
+#############################
+
+### Issue of Kyle
+PiperAdd001 = {
+    name = "Petyr" # Petyr Piper, father of Ambrose
+    # dna = PiperAdd001
+    dynasty = dynn_Piper
+
+    father = Piper_47 # Kyle Piper
+    mother = Groves_65 # Salanna Groves
+
+    culture = riverlander
+    religion = fots_seven
+
+    # Stats
+
+    # Traits
+    trait = drunkard
+
+    # Life events
+    8230.1.1 = { birth = yes }
+    8259.6.1 = {
+        death = {
+			death_reason = death_burned # Tragedy at Summerhall
+        }
+    }
+}
+### Issue of Petyr
+PiperAdd002 = {
+    name = "Ambrose" # Ambrose Piper, husband of Lorra Redstone
+    # dna = PiperAdd002
+    dynasty = dynn_Piper
+
+    father = PiperAdd001 # Petyr Piper
+    #mother = unknown
+
+    culture = riverlander
+    religion = fots_seven
+
+    # Stats
+
+    # Traits
+    trait = legitimized_bastard
+
+    # Life events
+    8250.1.1 = { birth = yes }
+    8282.1.1 = { death = yes }
+}
+### Issue of Ambrose
+PiperAdd003 = {
+    name = "Loras" # Loras Piper, son of Ambrose
+    # dna = PiperAdd003
+    dynasty = dynn_Piper
+
+    father = PiperAdd002 # Petyr Piper
+    mother = Redstone012 # Lorra Redstone
+
+    culture = riverlander
+    religion = fots_seven
+
+    # Stats
+
+    # Traits
+
+    # Life events
+    8276.3.9 = { birth = yes }
+    8284.1.1 = { employer = Baratheon_2 } # Live in King's Landing
+}
+PiperAdd004 = {
+    name = "Alanis" # Alanis Piper, daughter of Ambrose
+    # dna = PiperAdd004
+    dynasty = dynn_Piper
+    female = yes
+
+    father = PiperAdd002 # Petyr Piper
+    mother = Redstone012 # Lorra Redstone
+
+    culture = riverlander
+    religion = fots_seven
+
+    # Stats
+
+    # Traits
+
+    # Life events
+    8277.7.7 = { birth = yes }
+    8284.1.1 = { employer = Baratheon_2 } # Live in King's Landing
+}

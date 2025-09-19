@@ -1,0 +1,256 @@
+﻿RedstoneAdd001 = {
+  name = "Walda" # Walda, a lowborn woman, wife of Osric
+  #dna = RedstoneAdd001
+  female = yes
+
+  culture = moonman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8164.1.1 = { birth = yes }
+  8206.1.1 = { death = yes }
+}
+LockeAdd001 = {
+  name = "Uthor" # Uthor Locke, husband of Alayne Redstone
+  #dna = LockeAdd001
+  dynasty = dynn_Locke
+
+  father = Locke_34 # Raynard Locke, a semi-canon character
+  # mother = unknown
+
+  culture = northman
+  religion = fots_seven # His father converted in 161
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8165.1.1 = { birth = yes }
+  8207.1.1 = { death = yes }
+}
+BelmoreAdd001 = {
+  name = "Rowena" # Rowena Belmore, wife of Oswell
+  #dna = BelmoreAdd001
+  dynasty = dynn_Belmore
+  female = yes
+
+  father = Belmore_21 # Late child of Lord Pearse Belmore
+  mother = Waynwood_57 # Salanne Waynwood
+
+  culture = moonman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8183.1.1 = { birth = yes }
+  8209.1.1 = { death = { death_reason = death_murder } }
+}
+CorbrayAdd001 = {
+  name = "Jonos" # Jonos Stone, husband of Myranda Redstone
+  #dna = Redstone006
+  dynasty = dynn_Corbray
+
+  father = Corbray_46 # Bastard child of Lord Robert Corbray
+  # mother = unknown
+
+  culture = moonman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+  trait = bastard
+
+  # Life events
+  8195.1.1 = { birth = yes }
+  8232.1.1 = { death = yes }
+}
+PryorAdd001 = {
+  name = "Joanna" # Joanna Pryor
+  #dna = PryorAdd001
+  dynasty = dynn_Pryor
+  female = yes
+
+  # father = unknown #TODO: connect to family
+  # mother = unknown
+
+  culture = sisterman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8207.1.1 = { birth = yes }
+  8270.1.1 = { death = yes }
+}
+SunderlandAdd001 = {
+  name = "Falena" # Falena Sunderland
+  #dna = SunderlandAdd001
+  dynasty = dynn_Sunderland
+  female = yes
+
+  father = Sunderland_32 # Rolland Sunderland
+  mother = Torrent_30 # Mya Torrent
+
+  culture = sisterman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8200.1.1 = { birth = yes }
+  8266.1.1 = { death = yes }
+}
+CharltonAdd001 = {
+  name = "Walda" # Walda Charlton
+  #dna = CharltonAdd001
+  dynasty = dynn_Charlton
+  female = yes
+
+  father = Charlton_85 # Garrett Charlton
+  mother = Common_95 # Lena Common
+
+  culture = riverlander
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8220.1.1 = { birth = yes }
+  8272.1.1 = { death = yes }
+}
+UpcliffAdd001 = {
+  name = "Rosamund" # Rosamund Upcliff
+  #dna = UpcliffAdd001
+  dynasty = dynn_Upcliff
+  female = yes
+
+  father = Upcliff_62 # Harlan Upcliff
+  mother = Hazeley_59 # Jayde Hazeley
+
+  culture = riverlander
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+  trait = wild_oat # Born out of wedlock, Harlan and Jayde only married two years later
+
+  # Life events
+  8242.1.1 = { birth = yes }
+  9000.1.1 = { death = yes }
+}
+LockeAdd002 = {
+  name = "Elaena" # Elaena Locke, Lord Rodrik's first wife
+  #dna = LockeAdd002
+  dynasty = dynn_Charlton
+  female = yes
+
+  father = Locke_1 # Ondrew Locke
+  mother = Poole_44 # Nella Poole
+
+  culture = northman
+  religion = old_gods_wnw
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8261.9.23 = { birth = yes }
+  8279.4.4 = { death = { death_reason = death_childbirth } }
+}
+HersyAdd001 = {
+  name = "Jeyne" # Jeyne Hersy, Lord Rodrik's second wife
+  #dna = HersyAdd001
+  dynasty = dynn_Hersy
+  female = yes
+
+  father = Hersy_66 # Late child of Lord Eldred Hersy
+  mother = Marks_46 # Phillipa Marks
+
+  culture = fingerman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8270.2.14 = { birth = yes }
+  9000.1.1 = { death = yes }
+}
+MeadowsAdd001 = {
+  name = "Marybel" # Marybel Meadows, wife of Robett
+  #dna = MeadowsAdd001
+  dynasty = dynn_Hersy
+  female = yes
+
+  father = Meadows_46 # Simon Meadows
+  mother = Blackbar_73 # Denyse Blackbar
+
+  culture = reachman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8257.6.16 = { birth = yes }
+  9000.1.1 = { death = yes }
+}
+HawthorneAdd001 = {
+  name = "Cerelle" # Cerelle Hawthorne, wife of Armond Crawton
+  #dna = HawthorneAdd001
+  dynasty = dynn_Hawthorne
+  female = yes
+
+  #father = unknown
+  #mother = unknown
+
+  culture = westerman
+  religion = fots_seven
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8247.1.1 = { birth = yes }
+  8277.1.1 = { death = yes }
+}
+BlackwoodAdd001 = {
+  name = "Darla" # Darla Blackwood, wife of Gerold Mallister
+  #dna = BlackwoodAdd001
+  dynasty = dynn_Blackwood
+  female = yes
+
+  #father = unknown
+  #mother = unknown
+
+  culture = riverlander
+  religion = old_gods_wnw
+
+  # Stats
+
+  # Traits
+
+  # Life events
+  8246.1.1 = { birth = yes }
+  8284.1.1 = { death = yes }
+}

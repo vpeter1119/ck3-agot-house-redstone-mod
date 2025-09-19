@@ -1,0 +1,11 @@
+﻿dynn_Crawton = {
+	pattern="pattern__solid_designer.dds"
+	color1=agot_blue
+	color2=white
+	color3=blue
+	colored_emblem={
+		color1=agot_burgundy
+		color2=agot_black
+		texture="wl_sarwyck.dds"
+	}
+}

@@ -1,0 +1,9 @@
+c_pendric_hills = {
+    8055.1.1 = {
+        effect = {
+            title:b_goldburn = {
+                set_title_name = b_crawton
+            }
+        }
+    }
+}

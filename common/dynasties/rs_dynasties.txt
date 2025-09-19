@@ -1,0 +1,10 @@
+﻿dynn_Redstone = {
+    name = dynn_Redstone
+    culture = moonman
+    coat_of_arms_id = dynn_Redstone
+}
+dynn_Crawton = {
+    name = dynn_Crawton
+    culture = westerman
+    coat_of_arms_id = dynn_Crawton
+}

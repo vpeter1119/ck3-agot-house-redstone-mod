@@ -1,0 +1,5 @@
+# house_Redstone = {
+#     name = dynn_Redstone
+# 	dynasty = dynn_Redfort
+#     coat_of_arms_id = dynn_Redstone
+# }
