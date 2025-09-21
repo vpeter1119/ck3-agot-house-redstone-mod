@@ -1,9 +1,9 @@
 ﻿RedstoneAdd001 = {
   name = "Walda" # Walda, a lowborn woman, wife of Osric
-  #dna = RedstoneAdd001
+  dna = RedstoneAdd001
   female = yes
 
-  culture = moonman
+  culture = fingerman
   religion = fots_seven
 
   # Stats
@@ -35,7 +35,7 @@ LockeAdd001 = {
 }
 BelmoreAdd001 = {
   name = "Rowena" # Rowena Belmore, wife of Oswell
-  #dna = BelmoreAdd001
+  dna = BelmoreAdd001
   dynasty = dynn_Belmore
   female = yes
 

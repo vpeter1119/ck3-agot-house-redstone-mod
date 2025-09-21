@@ -18,42 +18,32 @@
 	prowess = 5
 
   # Traits
-  trait = bastard
+  trait = legitimized_bastard
+  trait = diligent
+  trait = greedy
+  trait = ambitious
+  trait = lifestyle_hunter_2_history
+
+  disallow_random_traits = yes
 
   # Life events
-  8164.1.1 = { birth = yes }
-  8167.1.1 = {
-    add_trait = bossy
-  }
-  8172.1.1 = {
-    add_trait = diligent
-  }
-  8177.1.1 = {
-    add_trait = greedy
+  8164.1.1 = {
+    birth = yes
+		add_character_flag = unlegitimize_on_load
   }
   8180.1.1 = { # Comes of age
-    add_trait = education_stewardship_3 # Fortune builder
-    remove_trait = bossy
-    add_trait = ambitious
+    trait = education_stewardship_3 # Fortune builder
   }
 	8186.1.1 = { add_spouse = RedstoneAdd001 } # Walda, a lowborn
   8196.1.1 = { # Granted lordship of Sunrise Bite (renamed Iron Coast), legitimized by the King
-    effect = {
-      agot_legitimize_bastard_effect = {
-        BASTARD = ROOT
-        LEGITIMIZER = title:e_the_iron_throne.holder # Daeron II Targaryen at the time
-      }
-    }
-  }
-  8200.1.1 = {
-    add_trait = hunter_1
+    remove_character_flag = unlegitimize_on_load
   }
   8206.1.1 = { death = yes }
 }
 ### Issue of Osric
 Redstone002 = {
   name = "Alayne" # Alayne Redstone, the Red Widow
-  #dna = Redstone002
+  dna = Redstone002
   dynasty = dynn_Redstone
   female = yes
 
@@ -64,23 +54,40 @@ Redstone002 = {
   religion = fots_seven
 
   # Stats
+	diplomacy = 8
+	martial = 3
+	stewardship = 8
+	intrigue = 5
+	learning = 5
+	prowess = 5
 
   # Traits
+  trait = intellect_good_1
+  trait = patient
+  trait = deceitful
+  trait = vengeful
+
+  disallow_random_traits = yes
 
   # Life events
   8180.1.1 = { birth = yes }
+  8196.1.1 = {
+    trait = education_intrigue_4
+  }
 	8198.1.1 = { add_spouse = LockeAdd001 } # Uthor Locke
   8209.1.1 = { # Two years after his husband died, Alayne returns home
     trait = widowed
 		give_nickname = nick_agot_rs_the_red_widow
     # Returns home
-		employer = Redstone005 # Robar Redstone
+		employer = title:c_sunrise_bite.holder
     # Becomes spymaster for her nephew Robar
-    agot_appoint_as_councillor_for_castle_history_effect = {
-      CASTLE = title:c_sunrise_bite
-      POSITION = councillor_spymaster
+    effect = {
+      agot_appoint_as_councillor_for_castle_history_effect = {
+        CASTLE = title:c_sunrise_bite
+        POSITION = councillor_spymaster
+      }
+      block_firing_councillor_effect = { COURT_OWNER = title:c_sunrise_bite.holder } # Alayne cannot be fired from the council
     }
-    block_firing_councillor_effect = { COURT_OWNER = title:c_sunrise_bite.holder } # Alayne cannot be fired from the council
 	}
   8211.1.1 = { # Alayne becomes regent after Mad Osmund's execution
     effect = {
@@ -91,7 +98,7 @@ Redstone002 = {
 }
 Redstone003 = {
   name = "Oswell" # Oswell Redstone, the second lord
-  # dna = Redstone003
+  dna = Redstone003
   dynasty = dynn_Redstone
 
   father = Redstone001 # Osric Redstone
@@ -131,7 +138,6 @@ Redstone004 = {
 	prowess = 5
 
   # Traits
-  trait = intellect_good_2 # Intelligent
 
   disallow_random_traits = yes
 

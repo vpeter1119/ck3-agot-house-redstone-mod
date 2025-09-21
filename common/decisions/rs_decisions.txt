@@ -1,4 +1,4 @@
-### Custom decisions ###
+﻿### Custom decisions ###
 # Destroy the mountain clans
 # Appease the mountain clans
 # Befriend the mountain clans

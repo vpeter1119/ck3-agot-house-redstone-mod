@@ -1,4 +1,5 @@
-﻿Redstone005 = {
+﻿### Robar Redstone I ###
+Redstone005 = {
 	portrait_info = {
 		genes = {
 			hair_color={ 219 148 204 140 }

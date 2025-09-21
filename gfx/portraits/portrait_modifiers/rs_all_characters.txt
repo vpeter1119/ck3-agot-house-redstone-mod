@@ -1,0 +1,116 @@
+﻿historical_characters_accessories = {
+    usage = game
+    selection_behavior = max
+    priority = 2
+
+	# Osric Redstone
+	Redstone001 = {}
+
+	# Walda, wife of Osric Redstone
+	RedstoneAdd001 = {}
+
+	# Alayne Redstone, daughter of Osric Redstone
+	Redstone002 = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = all_hairstyles
+                accessory = female_hair_custom_09
+                type = female
+            }
+            accessory = {
+                mode = add
+                gene = clothes
+                template = agot_historic_characters
+                accessory = female_clothes_secular_agot_summer_dress_05
+                type = female
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 100
+                age > 15
+                is_character_redstone002 = yes
+                is_female = yes
+            }
+        }
+	}
+
+	# Oswell Redstone, son of Osric Redstone
+	Redstone003 = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = all_beards
+                accessory = male_beard_western_10_pointy
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = all_hairstyles
+                accessory = male_hair_custom_11
+            }
+            accessory = {
+                mode = add
+                gene = clothes
+                template = vale_war_nobility_clothes
+                accessory = male_clothes_vale_war_02
+            }
+            accessory = {
+                mode = add
+                gene = legwear
+                template = agot_all_legwear
+                accessory = male_legwear_dragon_prince01
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 100
+                age > 15
+                is_character_redstone003 = yes
+            }
+        }
+	}
+
+	# Osmund Redstone, son of Osric Redstone
+	Redstone004 = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                value = 0
+            }
+            accessory = {
+                mode = add
+                gene = hairstyles
+                template = all_hairstyles
+                accessory = male_hair_custom_23
+            }
+			accessory = {
+				mode = add
+				gene = headgear
+				template = no_headgear
+				range = { 0 1 }
+			}
+            accessory = {
+                mode = add
+                gene = secondary_headgears
+                template = no_headgear
+                value = 0
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 100
+                age > 15
+                is_character_redstone004 = yes
+            }
+        }
+	}
+}

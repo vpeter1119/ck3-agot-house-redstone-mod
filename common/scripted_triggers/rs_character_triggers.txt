@@ -1,0 +1,25 @@
+﻿### Check for character match ###
+is_character_redstone001 = {
+	AND = {
+		exists = character:Redstone001
+		this = character:Redstone001
+	}
+}
+is_character_redstone002 = {
+	AND = {
+		exists = character:Redstone002
+		this = character:Redstone002
+	}
+}
+is_character_redstone003 = {
+	AND = {
+		exists = character:Redstone003
+		this = character:Redstone003
+	}
+}
+is_character_redstone004 = {
+	AND = {
+		exists = character:Redstone004
+		this = character:Redstone004
+	}
+}
