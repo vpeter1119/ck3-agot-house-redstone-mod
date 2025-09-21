@@ -4,7 +4,7 @@
   dynasty = dynn_Redstone
 
   #father = unknown
-  mother = Redfort_31 # Maery Redfort
+  # mother = Redfort_31 # Maery Redfort, unused for now, might set with event if Redfort ancestry is discovered
 
   culture = moonman
   religion = fots_seven
@@ -29,7 +29,7 @@ Redstone002 = {
   female = yes
 
   father = Redstone001 # Osric Redstone
-  # mother = RedstoneAdd001 # Walda
+  mother = RedstoneAdd001 # Walda
 
   culture = moonman
   religion = fots_seven
@@ -44,7 +44,14 @@ Redstone002 = {
   8209.1.1 = { # Two years after his husband died, Alayne returns home
     trait = widowed
 		give_nickname = nick_agot_rs_the_red_widow
+    # Returns home
 		employer = Redstone005 # Robar Redstone
+    # Becomes spymaster for her nephew Robar
+    agot_appoint_as_councillor_for_castle_history_effect = {
+      CASTLE = title:c_sunrise_bite
+      POSITION = councillor_spymaster
+    }
+    block_firing_councillor_effect = { COURT_OWNER = title:c_sunrise_bite.holder } # Alayne cannot be fired from the council
 	}
   8211.1.1 = { # Alayne becomes regent after Mad Osmund's execution
     effect = {
@@ -59,7 +66,7 @@ Redstone003 = {
   dynasty = dynn_Redstone
 
   father = Redstone001 # Osric Redstone
-  # mother = RedstoneAdd001 # Walda
+  mother = RedstoneAdd001 # Walda
 
   culture = moonman
   religion = fots_seven
@@ -81,7 +88,7 @@ Redstone004 = {
   dynasty = dynn_Redstone
 
   father = Redstone001 # Osric Redstone
-  # mother = RedstoneAdd001 # Walda
+  mother = RedstoneAdd001 # Walda
 
   culture = moonman
   religion = fots_seven
@@ -102,13 +109,16 @@ Redstone004 = {
   # Life events
   8187.1.1 = { birth = yes }
 	8209.1.1 = {
+    # Osmund begins terrorizing the region
     give_nickname = nick_agot_rs_the_black
+    # Osmund becomes regent and marshal for his nephew Robar
 		effect = {
 			agot_appoint_as_regent_for_castle_history_effect = { CASTLE = title:c_sunrise_bite }
 			agot_appoint_as_councillor_for_castle_history_effect = {
 				CASTLE = title:c_sunrise_bite
 				POSITION = councillor_marshal
 			}
+      block_firing_councillor_effect = { COURT_OWNER = title:c_sunrise_bite.holder } # Osmund cannot be fired from the council
 		}
 	}
   8211.1.1 = { 
@@ -151,10 +161,6 @@ Redstone005 = {
   8209.1.1 = { # Alayne returns home, becomes Robar's guardian
 		effect = {
 			agot_set_as_ward_history_effect = { GUARDIAN = character:Redstone002 } # Alayne Redstone
-			agot_appoint_as_councillor_for_castle_history_effect = {
-				CASTLE = title:c_sunrise_bite
-				POSITION = councillor_spymaster
-			}
 		}
     trait = patient
 	}
