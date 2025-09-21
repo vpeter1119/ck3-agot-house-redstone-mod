@@ -10,15 +10,44 @@
   religion = fots_seven
 
   # Stats
+	diplomacy = 6
+	martial = 6
+	stewardship = 6
+	intrigue = 3
+	learning = 4
+	prowess = 5
 
   # Traits
+  trait = bastard
 
   # Life events
-  8164.1.1 = {
-    birth = yes
-    trait = bastard
+  8164.1.1 = { birth = yes }
+  8167.1.1 = {
+    add_trait = bossy
+  }
+  8172.1.1 = {
+    add_trait = diligent
+  }
+  8177.1.1 = {
+    add_trait = greedy
+  }
+  8180.1.1 = { # Comes of age
+    add_trait = education_stewardship_3 # Fortune builder
+    remove_trait = bossy
+    add_trait = ambitious
   }
 	8186.1.1 = { add_spouse = RedstoneAdd001 } # Walda, a lowborn
+  8196.1.1 = { # Granted lordship of Sunrise Bite (renamed Iron Coast), legitimized by the King
+    effect = {
+      agot_legitimize_bastard_effect = {
+        BASTARD = ROOT
+        LEGITIMIZER = title:e_the_iron_throne.holder # Daeron II Targaryen at the time
+      }
+    }
+  }
+  8200.1.1 = {
+    add_trait = hunter_1
+  }
   8206.1.1 = { death = yes }
 }
 ### Issue of Osric
