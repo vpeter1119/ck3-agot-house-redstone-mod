@@ -108,14 +108,29 @@ Redstone003 = {
   religion = fots_seven
 
   # Stats
+  diplomacy = 7
+  martial = 5
+  stewardship = 6
+  intrigue = 4
+  learning = 3
+  prowess = 8
 
   # Traits
+  trait = intellect_good_1 # Quick
+  trait = calm
+  trait = gregarious
+  trait = patient
+
+  disallow_random_traits = yes
 
   # Life events
   8182.1.1 = { birth = yes }
-	8198.1.1 = { add_spouse = BelmoreAdd001 } # Rowena Belmore
+	8198.1.1 = {
+    add_spouse = BelmoreAdd001 # Rowena Belmore
+    trait = education_diplomacy_3
+  }
   8209.1.1 = {
-		death = { death_reason = death_fall }
+		death = { death_reason = death_horse_riding_accident }
 	}
 }
 Redstone004 = {
