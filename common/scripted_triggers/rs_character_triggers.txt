@@ -23,3 +23,9 @@ is_character_redstone004 = {
 		this = character:Redstone004
 	}
 }
+is_character_crawton004 = {
+	AND = {
+		exists = character:Crawton004
+		this = character:Crawton004
+	}
+}

@@ -1,0 +1,42 @@
+﻿historical_characters_accessories = {
+    usage = game
+    selection_behavior = max
+    priority = 2
+
+	Crawton004 = {
+        dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = no_hairstyles
+				value = 0
+			}
+            accessory = {
+                mode = add
+                gene = beards
+                template = no_beard
+                value = 0
+            }
+            accessory = { # Northern Armor Low
+                mode = add
+                gene = clothes
+                template = northern_war_nobility_clothes
+                accessory = m_clothes_sec_northern_war_nob_01_lo
+            }
+            accessory = { # Vale Common Legwear
+                mode = add
+                gene = legwear
+                template = agot_all_legwear
+                accessory = male_legwear_secular_vale_war_02
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 126
+                age > 15
+                is_character_crawton004 = yes
+            }
+        }
+	}
+}
